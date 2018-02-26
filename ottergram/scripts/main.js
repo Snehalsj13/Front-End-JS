@@ -8,30 +8,30 @@ var ESC_KEY = 27;
 
 function nextImg() {
   curImg = document.getElementById('currentImg');
-  if (curImg.src.includes('1')) {
+  if (curImg.src.includes('otter1')) {
     setDetails('img/otter2.jpg', 'How Deep Is Your Love');
-  } else if (curImg.src.includes('2')) {
+  } else if (curImg.src.includes('otter2')) {
     setDetails('img/otter3.jpg', 'You Should Be Dancing');
-  } else if (curImg.src.includes('3')) {
+  } else if (curImg.src.includes('otter3')) {
     setDetails('img/otter4.jpg', 'Night Fever');
-  } else if (curImg.src.includes('4')) {
+  } else if (curImg.src.includes('otter4')) {
     setDetails('img/otter5.jpg', 'To Love Somebody');
-  }else if (curImg.src.includes('5')) {
+  }else if (curImg.src.includes('otter5')) {
     setDetails('img/otter5.jpg', 'To Love Somebody');
   }
 }
 
 function previousImg() {
   curImg = document.getElementById('currentImg');
-  if (curImg.src.includes('1')) {
+  if (curImg.src.includes('otter1')) {
     setDetails('img/otter1.jpg', 'Stayin\' Alive');
-  } else if (curImg.src.includes('2')) {
+  } else if (curImg.src.includes('otter2')) {
     setDetails('img/otter1.jpg', 'Stayin\' Alive');
-  } else if (curImg.src.includes('3')) {
+  } else if (curImg.src.includes('otter3')) {
     setDetails('img/otter2.jpg', 'How Deep Is Your Love');
-  } else if (curImg.src.includes('4')) {
+  } else if (curImg.src.includes('otter4')) {
     setDetails('img/otter3.jpg', 'You Should Be Dancing');
-  }else if (curImg.src.includes('5')) {
+  }else if (curImg.src.includes('otter5')) {
     setDetails('img/otter4.jpg', 'Night Fever');
   }
 }
