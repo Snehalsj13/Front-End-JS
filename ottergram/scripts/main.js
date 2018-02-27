@@ -7,7 +7,7 @@ var TINY_EFFECT_CLASS = 'is-tiny';
 var ESC_KEY = 27;
 
 function nextImg() {
-  curImg = document.getElementById('currentImg');
+  var curImg = document.getElementById('currentImg');
   if (curImg.src.includes('otter1')) {
     setDetails('img/otter2.jpg', 'How Deep Is Your Love');
   } else if (curImg.src.includes('otter2')) {
@@ -22,7 +22,7 @@ function nextImg() {
 }
 
 function previousImg() {
-  curImg = document.getElementById('currentImg');
+  var curImg = document.getElementById('currentImg');
   if (curImg.src.includes('otter4')) {
     setDetails('img/otter3.jpg', 'You Should Be Dancing');
   } else if (curImg.src.includes('otter5')) {
@@ -96,7 +96,6 @@ function addKeyPressHandler() {
   'use strict';
   document.body.addEventListener('keyup', function(event) {
     event.preventDefault();
-    console.log(event.keyCode);
     if (event.keyCode === ESC_KEY) {
       hideDetails();
     }
@@ -111,3 +110,5 @@ function initializeEvents() {
 }
 
 initializeEvents();
+nextImg();
+previousImg();
