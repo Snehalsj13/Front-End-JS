@@ -110,3 +110,23 @@ li {
   position: relative;
   text-align: center;
 }
+
+.detail-image-container .previous{
+  left: 5%;
+  position: absolute;
+}
+
+.detail-image-container .next{
+  position: absolute;
+  right: 5%;
+}
+
+.previous{
+  display: block;
+  width: 10%;
+}
+
+.next{
+  display: block;
+  width: 10%;
+}

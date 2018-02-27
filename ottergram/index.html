@@ -14,10 +14,7 @@
   </header>
   <main class="main-content">
     <ul class="thumbnail-list" id = "image_slider">
-      <li class="thumbnail-item" data-image-title="Previous" data-image-url="img/Previous.jpg" onclick="previousImg()">
-        <img class="thumbnail-image" src="img\Previous.jpg" alt="Previous">
-        <a href="img\Previous.jpg"></a>
-      </li>
+
       <li class="thumbnail-item">
         <a href="img\otter1.jpg" data-image-role="trigger" data-image-title="Stayin' Alive" data-image-url="img/otter1.jpg">
           <img class="thumbnail-image" src="img\otter1.jpg" alt="Barry the Otter">
@@ -51,10 +48,7 @@
         </a>
 
       </li>
-      <li class="thumbnail-item" data-image-title="Next" data-image-url="img/Next.jpg" onclick="nextImg()">
-        <img class="thumbnail-image" src="img\Next.jpg" alt="Next">
-        <a href="img\Next.jpg"></a>
-      </li>
+
     </ul>
 
     <div class="detail-image-container">
@@ -62,6 +56,8 @@
         <img class="detail-image" data-image-role="target" src="img/otter1.jpg" alt="" id = "currentImg">
         <span class="detail-image-title" data-image-role="title" id = "currentTitle">Stayin' Alive</span>
       </div>
+      <img class="previous" data-image-title="Previous"  src="img\Previous.jpg" alt="Previous" onclick="previousImg()">
+      <img class="next" data-image-title="Next" src="img\Next.jpg" alt="Next" onclick="nextImg()">
     </div>
 
   </main>
